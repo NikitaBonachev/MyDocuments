@@ -8,14 +8,12 @@ import AppBar from './components/AppBar';
 injectTapEventPlugin();
 
 const Root = () => (
-  <div>
-    <MuiThemeProvider>
-      <AppBar />
-    </MuiThemeProvider>
-    <MuiThemeProvider>
-      <MyDocuments />
-    </MuiThemeProvider>
-  </div>
+  <MuiThemeProvider>
+    <div>
+        <AppBar />
+        <MyDocuments />
+    </div>
+  </MuiThemeProvider>
 );
 
 ReactDOM.render(
